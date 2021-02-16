@@ -1,0 +1,23 @@
+{
+  "name": "express-monitoring-workshop",
+  "version": "1.0.0",
+  "description": "Build & monitor a Serverless express application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epsagon/express-monitoring-workshop.git"
+  },
+  "author": "Epsagon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epsagon/express-monitoring-workshop/issues"
+  },
+  "homepage": "https://github.com/epsagon/express-monitoring-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "got": "^11.8.1"
+  }
+}
