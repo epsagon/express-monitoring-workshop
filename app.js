@@ -1,3 +1,4 @@
+require('./tracing.js');
 const express = require('express');
 const got = require('got');
 const slshttp = require('serverless-http')
