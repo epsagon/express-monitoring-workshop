@@ -20,7 +20,9 @@
     "epsagon": "^1.105.1",
     "express": "^4.17.1",
     "got": "^11.8.1",
-    "serverless-http": "^2.7.0",
-    "serverless-plugin-epsagon": "^1.10.1"
+    "serverless-http": "1.5.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.2.0"
   }
 }
