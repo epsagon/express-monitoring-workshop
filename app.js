@@ -35,6 +35,7 @@ app.get('/digest/:city', async (req, res) => {
         ]);
     res.json({ weather, news, fact });
 });
+
 app.use('*', (req, res) => {
     res.status(404).send('Not Found');
 })

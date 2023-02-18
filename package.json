@@ -19,7 +19,7 @@
   "dependencies": {
     "@opentelemetry/api": "^1.0.3",
     "@opentelemetry/auto-instrumentations-node": "^0.26.0",
-    "@opentelemetry/exporter-jaeger": "^1.0.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.35.1",
     "@opentelemetry/sdk-node": "^0.26.0",
     "epsagon": "^1.105.1",
     "express": "^4.17.1",

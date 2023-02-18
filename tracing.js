@@ -4,15 +4,14 @@
 const process = require('process');
 const opentelemetry = require('@opentelemetry/sdk-node');
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
-const { ConsoleSpanExporter } = require('@opentelemetry/sdk-trace-base');
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
-const { JaegerExporter } = require('@opentelemetry/exporter-jaeger');
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
 
 // configure the SDK to export telemetry data to the console
 // enable all auto-instrumentations from the meta package
 //const traceExporter = new ConsoleSpanExporter();
-const traceExporter = new JaegerExporter({endpoint: 'http://localhost:14268/api/traces'});
+const traceExporter = new OTLPTraceExporter({});
 const sdk = new opentelemetry.NodeSDK({
   resource: new Resource({
     [SemanticResourceAttributes.SERVICE_NAME]: 'my-service',
