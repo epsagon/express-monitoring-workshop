@@ -36,6 +36,10 @@ app.get('/digest/:city', async (req, res) => {
     res.json({ weather, news, fact });
 });
 
+app.get('/proxy/:city', async(req, res) => {
+    res.json(await got(`http://localhost:3000/digest/${req.params.city}`).json().catch((err) => null))
+})
+
 app.use('*', (req, res) => {
     res.status(404).send('Not Found');
 })
